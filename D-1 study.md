@@ -1,6 +1,6 @@
 # 1일차
 # 오늘 배운것 
-## 1.vs코드에서 branch 만든법
+## vs코드에서 branch 만든법
 ### 명령어
 ### git branch (현제 레포지토리에 존재하는 모든 branch 확인)
 ### git branch [branch_name] (branch를 만드는 코드)
