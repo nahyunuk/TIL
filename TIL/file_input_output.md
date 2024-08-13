@@ -23,6 +23,27 @@ dos.flush()
 // 스트림을 닫고 리소스를 해제한다.
 dos.close()
 ```
+```
+  // 파일 읽기
+    val fis = openFileInput("data1.dat")
+    val dis = DataInputStream(fis)
+
+    // 데이터 읽기
+    val data1 = dis.readInt()
+    val data2 = dis.readDouble()
+    val data3 = dis.readBoolean()
+    val data4 = dis.readUTF()
+
+    dis.close()
+    fis.close()
+
+    // 읽어온 데이터를 textView에 반영
+    textView.text = "data1 : ${data1}\n"
+    textView.append("data2 : ${data2}\n")
+    textView.append("data3 : ${data3}\n")
+    textView.append("data4 : $data4")
+출처: https://wise-99.tistory.com/182 [안드로이드 개발자의 창고:티스토리]
+```
 ## 외부 저장소
 - 단말기 내부의 공유 영역으로 모든 app이 접근 가능하다.
 - 단말기를 컴퓨터에 연결하면 탐색기를 통해 접근할 수 있는 영역을 의미한다.
